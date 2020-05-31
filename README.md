@@ -15,7 +15,7 @@ It is **not** suited for production use, since it is kind of heavy, often outdat
 
 ## Tags
 
-The tag format is: u<ubuntu-version>-n<node-version>-c<chrome-version>
+The tag format is: u{ubuntu-version}-n{node-version}-c{chrome-version}
 The following comamnds are used to extract the version numbers:
 
 * Ubuntu: lsb_release -a
