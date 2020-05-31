@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 RUN export DEBIAN_FRONTEND=noninteractive \
   && apt-get update -qqy \
-  && apt-get -qqy install tzdata libnss3 libnss3-tools libfontconfig1 wget ca-certificates apt-transport-https inotify-tools gnupg curl build-essential \
+  && apt-get -qqy install tzdata libnss3 libnss3-tools libfontconfig1 wget ca-certificates apt-transport-https inotify-tools gnupg curl build-essential git \
   && curl -sL https://deb.nodesource.com/setup_12.x | bash - \
   && apt-get install -qqy nodejs \
   && wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - \
